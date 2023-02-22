@@ -1,1 +1,8 @@
-# react-food-delivery
+# React Food Delivery
+
+## Technologies
+- React
+- Redux
+- Vite
+- MUI
+- NodeJS
