@@ -1,0 +1,3 @@
+const SWITCH_THEME = 'SWITCH_THEME'
+
+export {SWITCH_THEME}
