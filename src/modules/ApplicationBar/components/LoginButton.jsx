@@ -1,16 +1,23 @@
 import React from 'react'
-import { Button } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import LoginIcon from '@mui/icons-material/Login';
 
 const loginButtonStyles = {
-  gap: 1
+  button: {
+    gap: 1
+  },
+  typography: {
+    display: { xs: 'none', lg: 'block'}
+  }
 }
 
 export default function LoginButton() {
   return (
-    <Button color="inherit" sx={loginButtonStyles}>
+    <Button color="inherit" sx={loginButtonStyles.button}>
       <LoginIcon />
-      Login
+      <Typography variant="button" sx={loginButtonStyles.typography}>
+        Login
+      </Typography>
     </Button>
   )
 }

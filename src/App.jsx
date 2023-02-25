@@ -17,15 +17,13 @@ function App() {
   const theme = useSelector(state => state.theme.theme)
 
   return (
-    <React.Fragment>
-      <ThemeProvider theme={createTheme((theme === 'dark')? dark : light)}>
-        <CssBaseline />
-        <ApplicationBar />
-        <Container sx={appStyles.container}>
-          <HomePage />
-        </Container>
-      </ThemeProvider>
-    </React.Fragment>
+    <ThemeProvider theme={createTheme((theme === 'dark')? dark : light)}>
+      <CssBaseline />
+      <ApplicationBar />
+      <Container sx={appStyles.container}>
+        <HomePage />
+      </Container>
+    </ThemeProvider>
   )
 }
 

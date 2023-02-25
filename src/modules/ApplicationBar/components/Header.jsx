@@ -6,7 +6,7 @@ const headerStyles = {
   box: {
     display: 'flex',
     flexDirection: 'row',
-    gap: 2
+    gap: { xs: 1, lg: 2 }
   },
   burger: {
     width: 34,

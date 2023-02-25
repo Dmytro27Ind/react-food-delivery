@@ -8,7 +8,7 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';
 const themeSwitchStyle = {
   display: 'flex',
   alignItems: 'center',
-  gap: 1
+  gap: { xs: 0, lg: 1 }
 }
 
 export default function ThemeSwitch() {
