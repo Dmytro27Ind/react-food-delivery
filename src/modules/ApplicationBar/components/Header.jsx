@@ -24,7 +24,7 @@ export default function Header() {
     <Box sx={headerStyles.box}>
       <BurgerIcon sx={headerStyles.burger} />
       <Typography variant="h6">
-        React Food Delivery
+        React Food
       </Typography>
     </Box>
   )
