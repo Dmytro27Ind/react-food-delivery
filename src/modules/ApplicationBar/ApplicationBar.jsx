@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppBar, Toolbar } from '@mui/material'
 import { styled } from '@mui/material/styles';
-import CenteredTabs from './components/CenteredTabs';
+import CenteredButtons from './components/CenteredButtons';
 import Header from './components/Header';
 import LoginButton from './components/LoginButton';
 import ThemeSwitch from './components/ThemeSwitch';
@@ -24,7 +24,7 @@ export default function ApplicationBar() {
         <Toolbar sx={appBarStyles.toolbar}>
           <AppDrawer />
           <Header />
-          <CenteredTabs />
+          <CenteredButtons />
           <ThemeSwitch />
           <LoginButton />
         </Toolbar>

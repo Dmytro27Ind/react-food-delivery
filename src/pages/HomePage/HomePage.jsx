@@ -26,6 +26,13 @@ export default function HomePage() {
           Food Delivery
         </Typography>
       </Box>
+      <Box>
+        <Paper sx={{ height: '12vh' }}>
+          <Typography variant="h3" gutterBottom>
+            Hello
+          </Typography>
+        </Paper>
+      </Box>
     </React.Fragment>
   )
 }

@@ -4,8 +4,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { light, dark } from './palette'
-import ApplicationBar from './modules/ApplicationBar/ApplicationBar';
+import ApplicationBar from './modules/ApplicationBar';
 import HomePage from './pages/HomePage';
+import BottomNav from './modules/BottomNav';
 
 let appStyles = {
   container: {
@@ -23,6 +24,7 @@ function App() {
       <Container sx={appStyles.container}>
         <HomePage />
       </Container>
+      <BottomNav />
     </ThemeProvider>
   )
 }
