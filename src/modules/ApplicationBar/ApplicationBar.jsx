@@ -5,6 +5,7 @@ import CenteredTabs from './components/CenteredTabs';
 import Header from './components/Header';
 import LoginButton from './components/LoginButton';
 import ThemeSwitch from './components/ThemeSwitch';
+import AppDrawer from './components/AppDrawer';
 
 const appBarStyles = {
   toolbar: {
@@ -21,6 +22,7 @@ export default function ApplicationBar() {
     <React.Fragment>
       <AppBar position="fixed" color='primary'>
         <Toolbar sx={appBarStyles.toolbar}>
+          <AppDrawer />
           <Header />
           <CenteredTabs />
           <ThemeSwitch />

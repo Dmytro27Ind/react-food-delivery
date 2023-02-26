@@ -3,7 +3,8 @@ import { Tabs, Tab } from '@mui/material'
 
 const tabsStyles = {
   tabs: {
-    flexGrow: 1
+    flexGrow: 1,
+    display: { xs: 'none', md: 'flex' }
   }
 }
 
