@@ -5,4 +5,5 @@
 - Redux
 - Vite
 - MUI
+- Emotion
 - NodeJS
