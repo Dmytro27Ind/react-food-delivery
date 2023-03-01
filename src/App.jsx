@@ -6,7 +6,7 @@ import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/s
 import { light, dark } from './palette'
 import ApplicationBar from './modules/ApplicationBar';
 import BottomNav from './modules/BottomNav';
-import AppRouter from './router';
+import { AppRouter } from './router';
 
 let appStyles = {
   container: {
