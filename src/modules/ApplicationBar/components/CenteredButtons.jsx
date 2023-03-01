@@ -13,9 +13,13 @@ const buttonsStyles = {
 export default function CenteredButtons() {
   return (
     <Box sx={buttonsStyles.box}>
-      {['Home', 'About Us', 'Contacts'].map((label, ind) =>
-        <Button color="inherit" key={ind}>
-          {label}
+      {[
+        { label: 'Home', href: '/home' },
+        { label: 'About Us', href: '/about-us' },
+        { label: 'Contacts', href: '/contacts' }
+      ].map((element, ind) =>
+        <Button href={element.href} color="inherit" key={ind}>
+          {element.label}
         </Button>
       )}
     </Box>

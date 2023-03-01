@@ -5,8 +5,8 @@ import Container from '@mui/material/Container';
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { light, dark } from './palette'
 import ApplicationBar from './modules/ApplicationBar';
-import HomePage from './pages/HomePage';
 import BottomNav from './modules/BottomNav';
+import AppRouter from './router';
 
 let appStyles = {
   container: {
@@ -26,7 +26,7 @@ function App() {
       <CssBaseline />
       <ApplicationBar />
       <Container sx={appStyles.container}>
-        <HomePage />
+        <AppRouter />
       </Container>
       <BottomNav />
     </ThemeProvider>
