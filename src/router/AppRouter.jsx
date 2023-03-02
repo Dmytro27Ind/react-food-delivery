@@ -8,7 +8,7 @@ import { ABOUT_US, HOME, NOT_FOUND } from './routesConstants';
 function AppRouter() {
   return (
       <Routes>
-        <Route exact path={HOME} element={<HomePage/>}/>
+        <Route exact path={HOME} element={<Navigate to="/"/>}/>
         <Route exact path={ABOUT_US} element={<AboutUs/>}/>
         <Route exact path="/" element={<HomePage/>}/>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Paper, Typography, Box } from '@mui/material';
-import ScooterImage from '../../assets/scooter.png'
-import Image from '../../UI/Image';
+import ScooterImage from '@/assets/scooter.png'
+import Image from '@/UI/Image';
 import homeStyles from './HomePage.styles';
 
 

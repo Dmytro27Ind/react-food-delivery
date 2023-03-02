@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Button } from '@mui/material'
-import { ABOUT_US, CONTACTS, HOME } from '../../../../router'
+import { ABOUT_US, CONTACTS, HOME } from '@/router'
 import buttonsStyles from './CenteredButtons.styles'
 
 
