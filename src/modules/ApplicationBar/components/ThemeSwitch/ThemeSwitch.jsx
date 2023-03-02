@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import allActions from "../../../../store/actions"
+import allActions from "@/store/actions"
 import { Box, Typography, IconButton } from '@mui/material'
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
