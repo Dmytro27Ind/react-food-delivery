@@ -4,26 +4,9 @@ import HomeIcon from '@mui/icons-material/Home';
 import ContactsRoundedIcon from '@mui/icons-material/ContactsRounded';
 import GroupsIcon from '@mui/icons-material/Groups';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import ThemeSwitch from './ThemeSwitch';
+import ThemeSwitch from '../ThemeSwitch';
+import drawerStyles from './AppDrawer.styles'
 
-const drawerStyles = {
-  drawer: {
-    zIndex: 1,
-  },
-  box: {
-    display: { md: 'none'},
-    flexGrow: 1
-  },
-  themeSwitch: {
-    display: 'flex',
-    position: 'absolute',
-    right: 20,
-    top: 10
-  },
-  listBox: {
-    width: 250
-  }
-}
 
 export default function AppDrawer() {
   const [isOpen, setIsOpen] = useState(false)

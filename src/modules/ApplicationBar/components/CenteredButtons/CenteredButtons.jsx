@@ -1,15 +1,8 @@
 import React from 'react'
 import { Box, Button } from '@mui/material'
-import { ABOUT_US, CONTACTS, HOME } from '../../../router'
+import { ABOUT_US, CONTACTS, HOME } from '../../../../router'
+import buttonsStyles from './CenteredButtons.styles'
 
-const buttonsStyles = {
-  box: {
-    flexGrow: 1,
-    display: { xs: 'none', md: 'flex' },
-    justifyContent: 'center',
-    gap: 2
-  }
-}
 
 export default function CenteredButtons() {
   return (

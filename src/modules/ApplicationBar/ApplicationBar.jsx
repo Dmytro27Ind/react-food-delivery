@@ -1,21 +1,13 @@
 import React from 'react'
 import { AppBar, Toolbar } from '@mui/material'
-import { styled } from '@mui/material/styles';
 import CenteredButtons from './components/CenteredButtons';
 import Header from './components/Header';
 import LoginButton from './components/LoginButton';
 import ThemeSwitch from './components/ThemeSwitch';
 import AppDrawer from './components/AppDrawer';
+import appBarStyles from './ApplicationBar.styles'
+import Offset from './components/Offset';
 
-const appBarStyles = {
-  toolbar: {
-    width: {xs: '96%', sm: '90%', md: '80%'},
-    marginLeft: 'auto',
-    marginRight: 'auto'
-  }
-}
-
-const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
 export default function ApplicationBar() {
   return (

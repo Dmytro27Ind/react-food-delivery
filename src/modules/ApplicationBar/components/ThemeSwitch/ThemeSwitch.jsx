@@ -1,15 +1,11 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import allActions from "../../../store/actions"
+import allActions from "../../../../store/actions"
 import { Box, Typography, IconButton } from '@mui/material'
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import themeSwitchStyle from './ThemeSwitch.styles'
 
-const themeSwitchStyle = {
-  display: { xs: 'none', md: 'flex' },
-  alignItems: 'center',
-  gap: { xs: 0, lg: 1 }
-}
 
 export default function ThemeSwitch({sx}) {
   const theme = useSelector(state => state.theme.theme)

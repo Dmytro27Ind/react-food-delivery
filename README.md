@@ -9,5 +9,7 @@
 - React Router
 - NodeJS
 
+## Project Architecture
+- Modular Architecture
+
 ## API used
-- [Foodpanda API](https://www.foodspark.io/foodpanda-api.php)

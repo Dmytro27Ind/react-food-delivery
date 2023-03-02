@@ -7,13 +7,8 @@ import { light, dark } from './palette'
 import ApplicationBar from './modules/ApplicationBar';
 import BottomNav from './modules/BottomNav';
 import { AppRouter } from './router';
+import appStyles from './App.styles';
 
-let appStyles = {
-  container: {
-    maxWidth: { lg: '100%' },
-    width: {xs: '98%', sm: '90%', md: '80%'}
-  }
-}
 
 function App() {
   const theme = useSelector(state => state.theme.theme)

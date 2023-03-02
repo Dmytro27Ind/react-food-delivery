@@ -4,19 +4,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import ContactsRoundedIcon from '@mui/icons-material/ContactsRounded';
 import GroupsIcon from '@mui/icons-material/Groups';
 import Offset from './components/Offset';
+import navStyles from './BottomNav.styles';
 
-const navStyles = {
-  paper: {
-    position: 'fixed',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    display: { xs: 'block', sm: 'none'}
-  },
-  bottomNav: {
-    backgroundColor: 'transparent'
-  }
-}
 
 export default function BottomNav() {
   const [value, setValue] = useState(1);
