@@ -22,7 +22,7 @@ const light = responsiveFontSizes(
             },
         },
         typography: {
-            fontFamily: 'Shantell Sans, Roboto, sans-serif',
+            fontFamily: 'Shantell Sans, sans-serif',
         },
         components: {
             MuiPaper: {
@@ -66,7 +66,7 @@ const dark = responsiveFontSizes(
             },
         },
         typography: {
-            fontFamily: 'Shantell Sans, Roboto, sans-serif',
+            fontFamily: 'Shantell Sans, sans-serif',
         },
     })
 );
