@@ -10,7 +10,7 @@ import './fonts/fonts.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <HashRouter>
+      <HashRouter basename='/react-food-delivery'>
         <App />
       </HashRouter>
     </Provider>
