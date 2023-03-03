@@ -1,7 +1,7 @@
 
 const appBarStyles = {
     toolbar: {
-        width: {xs: '96%', sm: '90%', md: '80%'},
+        width: {xs: '100%', sm: '95%', md: '85%'},
         marginLeft: 'auto',
         marginRight: 'auto'
     },
