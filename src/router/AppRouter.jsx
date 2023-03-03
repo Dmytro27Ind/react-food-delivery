@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from '@/pages/HomePage';
 import AboutUs from '@/pages/AboutUsPage'
 import NotFound from '@/pages/NotFound'
-import { ABOUT_US, HOME, NOT_FOUND } from './routesConstants';
+import { ABOUT_US, HOME, NOT_FOUND, GIT_PROJECT } from './routesConstants';
 
 function AppRouter() {
   return (
