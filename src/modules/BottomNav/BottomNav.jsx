@@ -1,19 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Paper, BottomNavigation, BottomNavigationAction } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import ContactsRoundedIcon from '@mui/icons-material/ContactsRounded';
 import GroupsIcon from '@mui/icons-material/Groups';
 import Offset from './components/Offset';
 import navStyles from './BottomNav.styles';
+import { ABOUT_US, CONTACTS, HOME } from '@/router'
 
 
 export default function BottomNav() {
-  const [value, setValue] = useState(1);
+  let navValue = parseInt(localStorage.getItem('navValue'))
 
   const navItems = [
-    { text: 'About Us', icon: <GroupsIcon /> },
-    { text: 'Home', icon: <HomeIcon /> },
-    { text: 'Contacts', icon: <ContactsRoundedIcon /> }
+    { text: 'About Us', icon: <GroupsIcon />, href: ABOUT_US },
+    { text: 'Home', icon: <HomeIcon />, href: HOME },
+    { text: 'Contacts', icon: <ContactsRoundedIcon />, href: CONTACTS }
   ]
 
   return (
@@ -23,11 +24,11 @@ export default function BottomNav() {
         <BottomNavigation
           sx={navStyles.bottomNav}
           showLabels
-          value={value}
-          onChange={ (event, newValue) => setValue(newValue) }
+          value={isNaN(navValue)? 1 : navValue}
+          onChange={ (event, newValue) => localStorage.setItem('navValue', newValue) }
         >
           {navItems.map((item, ind) =>
-            <BottomNavigationAction key={ind} label={item.text} icon={item.icon} />
+            <BottomNavigationAction href={item.href} key={ind} label={item.text} icon={item.icon} />
           )}
         </BottomNavigation>
       </Paper>

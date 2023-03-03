@@ -7,15 +7,16 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import ThemeSwitch from '@/shared/components/ThemeSwitch';
 import drawerStyles from './AppDrawer.styles'
 import Socials from '@/shared/components/Socials/Socials';
+import { ABOUT_US, CONTACTS, HOME } from '@/router'
 
 
 export default function AppDrawer() {
   const [isOpen, setIsOpen] = useState(false)
 
   const listItems = [
-    { text: 'Home', icon: <HomeIcon /> },
-    { text: 'About Us', icon: <GroupsIcon /> },
-    { text: 'Contacts', icon: <ContactsRoundedIcon /> }
+    { text: 'Home', icon: <HomeIcon />, href: HOME },
+    { text: 'About Us', icon: <GroupsIcon />, href: ABOUT_US },
+    { text: 'Contacts', icon: <ContactsRoundedIcon />, href: CONTACTS }
   ]
 
   const toggleDrawer = (open) => (event) => {
@@ -34,7 +35,7 @@ export default function AppDrawer() {
       <List>
         {listItems.map((item, index) => (
           <ListItem key={index} onClick={toggleDrawer(false)} disablePadding>
-            <ListItemButton>
+            <ListItemButton href={item.href}>
               <ListItemIcon>
                 {item.icon}
               </ListItemIcon>
