@@ -23,7 +23,8 @@ const headerPaper = {
         width: { xs: '90%', md: '45%' },
         display: 'flex',
         justifyContent: 'center',
-        p: {xs: 0, sm: 1, md: 2}
+        p: {xs: 0, sm: 1, md: 2},
+        position: 'relative'
     },
     title: { fontWeight: 'bold' },
     image: {

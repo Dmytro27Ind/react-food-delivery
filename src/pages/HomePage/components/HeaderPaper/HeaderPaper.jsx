@@ -1,6 +1,7 @@
 import React from 'react'
 import { Paper, Typography, Box, Button } from '@mui/material';
 import BurgerImage from '@/assets/burger_paper.png'
+import DiscountImage from '@/assets/discount_paper.png'
 import Image from '@/shared/UI/Image';
 import headerPaper from './HeaderPaper.styles';
 import AppRating from './components/AppRating';
@@ -24,6 +25,7 @@ export default function HeaderPaper() {
       </Box>
       <Box sx={headerPaper.imageBox}>
         <Image src={BurgerImage} sx={headerPaper.image}/>
+        <Image src={DiscountImage} sx={{ position: 'absolute', width: '40%', maxWidth: 180, top: -20, left: 0 }}/>
       </Box>
     </Paper>
   )
