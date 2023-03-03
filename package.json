@@ -19,8 +19,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.2",
-    "redux": "^4.2.1",
-    "vite-plugin-svgr": "^2.4.0"
+    "redux": "^4.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
@@ -29,6 +28,7 @@
     "eslint": "^8.34.0",
     "eslint-config-react-app": "^7.0.1",
     "vite": "^4.1.0",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-svgr": "^2.4.0"
   }
 }

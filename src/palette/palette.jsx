@@ -1,13 +1,19 @@
 
 const light = {
     palette: {
-        mode: "light"
+        mode: "light",
+        white: {
+            main: "#ffffff"
+        }
     },
 };
 
 const dark = {
     palette: {
-        mode: "dark"
+        mode: "dark",
+        white: {
+            main: "#ffffff"
+        }
     },
 };
 

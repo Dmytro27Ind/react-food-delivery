@@ -9,12 +9,18 @@ const drawerStyles = {
     },
     themeSwitch: {
         display: 'flex',
-        position: 'absolute',
-        right: 20,
-        top: 10
+        justifyContent: 'center',
+        width: '100%',
+        mt: 2,
+        mb: 2
     },
     listBox: {
-        width: 250
+        width: 270
+    },
+    socials: {
+        display: 'flex',
+        justifyContent: 'center',
+        width: '100%'
     }
 }
 

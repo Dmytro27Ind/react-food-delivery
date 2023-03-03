@@ -4,8 +4,9 @@ import HomeIcon from '@mui/icons-material/Home';
 import ContactsRoundedIcon from '@mui/icons-material/ContactsRounded';
 import GroupsIcon from '@mui/icons-material/Groups';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import ThemeSwitch from '../ThemeSwitch';
+import ThemeSwitch from '@/shared/components/ThemeSwitch';
 import drawerStyles from './AppDrawer.styles'
+import Socials from '@/shared/components/Socials/Socials';
 
 
 export default function AppDrawer() {
@@ -45,7 +46,10 @@ export default function AppDrawer() {
       <Divider />
       <List>
         <ListItem disablePadding>
-          <ThemeSwitch sx={drawerStyles.themeSwitch} />
+          <ThemeSwitch sx={drawerStyles.themeSwitch}/>
+        </ListItem>
+        <ListItem disablePadding>
+          <Socials sx={drawerStyles.socials}/>
         </ListItem>
       </List>
     </Box>
