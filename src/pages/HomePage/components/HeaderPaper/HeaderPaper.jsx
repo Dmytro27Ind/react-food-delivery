@@ -13,7 +13,7 @@ export default function HeaderPaper() {
         <Typography variant="h2" gutterBottom sx={headerPaper.title}>
           We Provide Delivery Within 30 Min
         </Typography>
-        <Typography variant="h5" sx={headerPaper.subtitle}>
+        <Typography variant="h6" color="text.secondary" sx={headerPaper.subtitle}>
           Imagine you don't need a diet because we provide healthy and delicious food for you!
         </Typography>
         <Box sx={headerPaper.controlsBox}>

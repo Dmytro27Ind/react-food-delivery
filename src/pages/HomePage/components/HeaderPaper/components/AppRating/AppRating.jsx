@@ -7,7 +7,7 @@ export default function AppRating() {
 
   return (
     <Box>
-      <Typography variant="h6">
+      <Typography variant="h6" color="text.secondary">
         Our Rating:
       </Typography>
       <Rating name="rating-controlled" value={value} precision={0.5} onChange={onRatingChange}/>
