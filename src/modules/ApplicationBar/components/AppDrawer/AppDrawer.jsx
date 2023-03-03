@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
+import allActions from "@/shared/store/actions"
 import { IconButton, Box, SwipeableDrawer, List, Divider, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import ContactsRoundedIcon from '@mui/icons-material/ContactsRounded';
@@ -12,6 +14,7 @@ import { ABOUT_US, CONTACTS, HOME } from '@/router'
 
 export default function AppDrawer() {
   const [isOpen, setIsOpen] = useState(false)
+  const dispatch = useDispatch()
 
   const listItems = [
     { text: 'Home', icon: <HomeIcon />, href: HOME },
@@ -35,7 +38,7 @@ export default function AppDrawer() {
       <List>
         {listItems.map((item, index) => (
           <ListItem key={index} onClick={toggleDrawer(false)} disablePadding>
-            <ListItemButton href={item.href}>
+            <ListItemButton href={item.href} onClick={() => dispatch(allActions.changeNavValue(item.href))}>
               <ListItemIcon>
                 {item.icon}
               </ListItemIcon>

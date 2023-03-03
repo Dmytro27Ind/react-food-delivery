@@ -1,4 +1,6 @@
 import React from 'react'
+import { useSelector, useDispatch } from 'react-redux';
+import allActions from "@/shared/store/actions"
 import { Paper, BottomNavigation, BottomNavigationAction } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import ContactsRoundedIcon from '@mui/icons-material/ContactsRounded';
@@ -9,7 +11,8 @@ import { ABOUT_US, CONTACTS, HOME } from '@/router'
 
 
 export default function BottomNav() {
-  let navValue = parseInt(localStorage.getItem('navValue'))
+  const navValue = useSelector(state => state.nav.value)
+  const dispatch = useDispatch()
 
   const navItems = [
     { text: 'About Us', icon: <GroupsIcon />, href: ABOUT_US },
@@ -24,11 +27,11 @@ export default function BottomNav() {
         <BottomNavigation
           sx={navStyles.bottomNav}
           showLabels
-          value={isNaN(navValue)? 1 : navValue}
-          onChange={ (event, newValue) => localStorage.setItem('navValue', newValue) }
+          value={navValue}
+          onChange={ (event, newValue) => dispatch(allActions.changeNavValue(newValue)) }
         >
           {navItems.map((item, ind) =>
-            <BottomNavigationAction href={item.href} key={ind} label={item.text} icon={item.icon} />
+            <BottomNavigationAction href={item.href} value={item.href} key={ind} label={item.text} icon={item.icon} />
           )}
         </BottomNavigation>
       </Paper>
