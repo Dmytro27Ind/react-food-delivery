@@ -7,7 +7,6 @@
 - MUI
 - Emotion
 - React Router
-- NodeJS
 
 ## Project Architecture
 - Modular Architecture
