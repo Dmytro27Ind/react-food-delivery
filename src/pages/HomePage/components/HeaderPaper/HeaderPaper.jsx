@@ -1,6 +1,6 @@
 import React from 'react'
 import { Paper, Typography, Box, Button } from '@mui/material';
-import ScooterImage from '@/assets/scooter.png'
+import BurgerImage from '@/assets/burger_paper.png'
 import Image from '@/shared/UI/Image';
 import headerPaper from './HeaderPaper.styles';
 import AppRating from './components/AppRating';
@@ -23,7 +23,7 @@ export default function HeaderPaper() {
         <Socials sx={headerPaper.social} color="inherit"/>
       </Box>
       <Box sx={headerPaper.imageBox}>
-        <Image src={ScooterImage} sx={headerPaper.image}/>
+        <Image src={BurgerImage} sx={headerPaper.image}/>
       </Box>
     </Paper>
   )

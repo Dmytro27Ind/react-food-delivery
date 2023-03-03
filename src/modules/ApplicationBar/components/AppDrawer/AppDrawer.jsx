@@ -47,10 +47,10 @@ export default function AppDrawer() {
       <Divider />
       <List>
         <ListItem disablePadding>
-          <ThemeSwitch sx={drawerStyles.themeSwitch}/>
+          <ThemeSwitch color="secondary" sx={drawerStyles.themeSwitch}/>
         </ListItem>
         <ListItem disablePadding>
-          <Socials sx={drawerStyles.socials}/>
+          <Socials sx={drawerStyles.socials} color="text.secondary"/>
         </ListItem>
       </List>
     </Box>

@@ -3,7 +3,8 @@ const headerPaper = {
     paper: {
         display: 'flex',
         flexDirection: { xs: 'column', md: 'row' },
-        alignItems: 'center'
+        alignItems: 'center',
+        mt: 3
     },
     contentBox: {
         width: { xs: '90%', md: '55%' },
@@ -21,8 +22,8 @@ const headerPaper = {
     imageBox: {
         width: { xs: '90%', md: '45%' },
         display: 'flex',
-        alignItems: 'center',
-        p: {xs:4, sm: 8, md: 2, lg: 6},
+        justifyContent: 'center',
+        p: {xs: 0, sm: 1, md: 2}
     },
     title: { fontWeight: 'bold' },
     image: {
