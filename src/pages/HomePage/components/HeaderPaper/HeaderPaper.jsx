@@ -5,7 +5,7 @@ import DiscountImage from '@/assets/discount_paper.png'
 import Image from '@/shared/UI/Image';
 import headerPaper from './HeaderPaper.styles';
 import AppRating from './components/AppRating';
-import Socials from '@/shared/components/Socials/Socials';
+import Socials from '@/shared/components/Socials';
 
 export default function HeaderPaper() {
   return (

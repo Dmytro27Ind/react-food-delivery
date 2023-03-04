@@ -1,13 +1,13 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import allActions from "@/shared/store/actions"
+import allActions from "@/store/actions"
 import { Paper, BottomNavigation, BottomNavigationAction } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import ContactsRoundedIcon from '@mui/icons-material/ContactsRounded';
 import GroupsIcon from '@mui/icons-material/Groups';
 import Offset from './components/Offset';
 import navStyles from './BottomNav.styles';
-import { ABOUT_US, CONTACTS, HOME } from '@/router'
+import { ABOUT_US, CONTACTS, HOME } from '@/router/routesConstants'
 
 
 export default function BottomNav() {

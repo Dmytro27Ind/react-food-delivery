@@ -1,8 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import allActions from "@/shared/store/actions"
+import allActions from "@/store/actions"
 import { Box, Button } from '@mui/material'
-import { ABOUT_US, CONTACTS, HOME } from '@/router'
+import { ABOUT_US, CONTACTS, HOME } from '@/router/routesConstants'
 import buttonsStyles from './CenteredButtons.styles'
 
 

@@ -1,5 +1,5 @@
 import { CHANGE_NAV_VALUE } from '../actions/constants'
-import { HOME } from '../../../router'
+import { HOME } from '@/router/routesConstants'
 
 const defaultState = {
     value: localStorage.getItem('navValue') || HOME

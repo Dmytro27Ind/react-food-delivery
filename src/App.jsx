@@ -3,10 +3,10 @@ import { useSelector } from 'react-redux';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { ThemeProvider } from '@mui/material/styles';
-import { light, dark } from './palette'
+import { light, dark } from './palette/palette'
 import ApplicationBar from './modules/ApplicationBar';
 import BottomNav from './modules/BottomNav';
-import { AppRouter } from './router';
+import AppRouter from './router/AppRouter';
 import appStyles from './App.styles';
 
 

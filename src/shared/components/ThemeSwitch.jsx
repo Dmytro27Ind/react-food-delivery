@@ -1,10 +1,14 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import allActions from "@/shared/store/actions"
+import allActions from "@/store/actions"
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import buttonStyles from './ThemeSwitch.styles'
+
+const buttonStyles = {
+  display: 'flex',
+  gap: 1
+}
 
 export default function ThemeSwitch({sx, withoutTitle, color='primary'}) {
   const theme = useSelector(state => state.theme.theme)

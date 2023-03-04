@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import allActions from "@/shared/store/actions"
+import allActions from "@/store/actions"
 import { IconButton, Box, SwipeableDrawer, List, Divider, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import ContactsRoundedIcon from '@mui/icons-material/ContactsRounded';
@@ -8,8 +8,8 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import ThemeSwitch from '@/shared/components/ThemeSwitch';
 import drawerStyles from './AppDrawer.styles'
-import Socials from '@/shared/components/Socials/Socials';
-import { ABOUT_US, CONTACTS, HOME } from '@/router'
+import Socials from '@/shared/components/Socials';
+import { ABOUT_US, CONTACTS, HOME } from '@/router/routesConstants'
 
 
 export default function AppDrawer() {
