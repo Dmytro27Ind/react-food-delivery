@@ -17,15 +17,17 @@ export default function HeaderPaper() {
         <Typography variant="h6" color="text.secondary" sx={headerPaper.subtitle}>
           Imagine you don't need a diet because we provide healthy and delicious food for you!
         </Typography>
+      </Box>
+      <Box sx={headerPaper.imageBox}>
+        <Image src={BurgerImage} sx={headerPaper.image}/>
+        <Image src={DiscountImage} sx={headerPaper.discountImage}/>
+      </Box>
+      <Box sx={headerPaper.controlsWrapper}>
         <Box sx={headerPaper.controlsBox}>
           <AppRating />
           <Button variant="contained" sx={headerPaper.orderButton}>Order</Button>
         </Box>
         <Socials sx={headerPaper.social} color="inherit"/>
-      </Box>
-      <Box sx={headerPaper.imageBox}>
-        <Image src={BurgerImage} sx={headerPaper.image}/>
-        <Image src={DiscountImage} sx={{ position: 'absolute', width: '40%', maxWidth: 180, top: -20, left: 0 }}/>
       </Box>
     </Paper>
   )
