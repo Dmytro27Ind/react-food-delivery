@@ -1,5 +1,5 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
-import { blue, deepOrange, orange, red } from '@mui/material/colors';
+import { blue, common, deepOrange, orange, red } from '@mui/material/colors';
 
 const light = responsiveFontSizes(
     createTheme({
@@ -20,6 +20,7 @@ const light = responsiveFontSizes(
                 dark: orange[900],
                 contrastText: '#000',
             },
+            activeTab: common.black
         },
         typography: {
             fontFamily: 'Shantell Sans, sans-serif',
@@ -64,6 +65,7 @@ const dark = responsiveFontSizes(
                 dark: blue[300],
                 contrastText: '#000',
             },
+            activeTab: deepOrange[100]
         },
         typography: {
             fontFamily: 'Shantell Sans, sans-serif',
