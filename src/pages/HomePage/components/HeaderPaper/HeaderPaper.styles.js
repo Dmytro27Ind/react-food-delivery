@@ -30,7 +30,7 @@ const headerPaper = {
     },
     image: {
         width: '100%',
-        maxWidth: 540
+        maxWidth: 520
     },
     discountImage: {
         position: 'absolute',
@@ -45,7 +45,7 @@ const headerPaper = {
         alignItems: 'center',
         mt: 3,
         mb: 4,
-        gap: {xs: 2, sm: 3, lg: 4}
+        gap: {xs: 2, sm: 3}
     },
     controlsBox: {
         display: 'flex',
