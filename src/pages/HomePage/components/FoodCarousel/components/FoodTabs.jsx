@@ -21,7 +21,7 @@ export default function FoodTabs() {
   const downSm = useMediaQuery(theme.breakpoints.down('sm'));
 
   const handleChange = (event, newValue) => {
-    dispatch(allActions.changeTabsValue(newValue));
+    dispatch(allActions.changeTabsValue(downSm? newValue*2 : newValue));
   };
 
   return (
