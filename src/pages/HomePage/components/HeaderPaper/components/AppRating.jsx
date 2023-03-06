@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Typography, Box, Rating } from '@mui/material';
 
 export default function AppRating() {
-  const [value, setValue] = useState(3.5);
+  const [value, setValue] = useState(4.5);
   const onRatingChange = (event, newValue) => setValue(newValue)
 
   return (

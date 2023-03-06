@@ -1,4 +1,4 @@
-import BaconHamburger from "@/assets/burger_paper.png"
+import BaconHamburger from "@/assets/hamburger_bacon.png"
 import CheeseHamburger from '@/assets/hamburger_cheese.png'
 import SmallHamburger from '@/assets/hamburger_small.png'
 import VeggieHamburger from '@/assets/hamburger_veggie.png'

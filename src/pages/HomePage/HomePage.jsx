@@ -1,5 +1,5 @@
 import React from 'react'
-import FoodCarousel from './components/FoodCarousel'
+import FoodSlider from './components/FoodSlider/FoodSlider'
 import HeaderPaper from './components/HeaderPaper/HeaderPaper'
 import SubtitleSection from './components/SubtitleSection'
 
@@ -8,7 +8,7 @@ export default function HomePage() {
     <React.Fragment>
       <HeaderPaper />
       <SubtitleSection />
-      <FoodCarousel />
+      <FoodSlider />
     </React.Fragment>
   )
 }

@@ -1,5 +1,5 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
-import { blue, common, deepOrange, orange, red } from '@mui/material/colors';
+import { blue, common, deepOrange, red, grey } from '@mui/material/colors';
 
 const light = responsiveFontSizes(
     createTheme({
@@ -15,10 +15,10 @@ const light = responsiveFontSizes(
                 contrastText: '#000',
             },
             secondary: {
-                light: orange[300],
-                main: orange[700],
-                dark: orange[900],
-                contrastText: '#000',
+                light: grey[700],
+                main: grey[800],
+                dark: grey[900],
+                contrastText: '#fff',
             },
             activeTab: common.black
         },
