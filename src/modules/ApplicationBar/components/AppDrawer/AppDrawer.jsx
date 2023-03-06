@@ -9,7 +9,7 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import ThemeSwitch from '@/shared/components/ThemeSwitch';
 import drawerStyles from './AppDrawer.styles'
 import Socials from '@/shared/components/Socials';
-import { ABOUT_US, CONTACTS, HOME } from '@/router/routesConstants'
+import { MENU, CONTACTS, HOME } from '@/router/routesConstants'
 
 
 export default function AppDrawer() {
@@ -18,7 +18,7 @@ export default function AppDrawer() {
 
   const listItems = [
     { text: 'Home', icon: <HomeIcon />, href: HOME },
-    { text: 'About Us', icon: <GroupsIcon />, href: ABOUT_US },
+    { text: 'Menu', icon: <GroupsIcon />, href: MENU },
     { text: 'Contacts', icon: <ContactsRoundedIcon />, href: CONTACTS }
   ]
 

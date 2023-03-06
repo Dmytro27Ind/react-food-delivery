@@ -4,7 +4,9 @@ import { Typography, Box } from '@mui/material'
 const styles = {
   box: {
     m: {xs: 1, sm: 4, md: 6, lg: 8},
-    mt:{xs: 3},
+    mt: {xs: 3},
+    pt: 4,
+    pb: 4,
     textAlign: 'center'
   },
   title: { fontWeight: 'bold' }

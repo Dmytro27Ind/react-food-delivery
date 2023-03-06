@@ -1,14 +1,14 @@
 import React from 'react'
 import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from '@/pages/HomePage';
-import AboutUs from '@/pages/AboutUsPage'
+import Menu from '@/pages/MenuPage'
 import NotFound from '@/pages/NotFound'
 
 function AppRouter() {
   return (
       <Routes>
         <Route exact path="/home" element={<Navigate to="/"/>}/>
-        <Route exact path="/about-us" element={<AboutUs/>}/>
+        <Route exact path="/menu" element={<Menu/>}/>
         <Route exact path="/" element={<HomePage/>}/>
 
         <Route exact path="not-found" element={<NotFound/>}/>

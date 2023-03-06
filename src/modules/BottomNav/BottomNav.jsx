@@ -7,7 +7,7 @@ import ContactsRoundedIcon from '@mui/icons-material/ContactsRounded';
 import GroupsIcon from '@mui/icons-material/Groups';
 import Offset from './components/Offset';
 import navStyles from './BottomNav.styles';
-import { ABOUT_US, CONTACTS, HOME } from '@/router/routesConstants'
+import { MENU, CONTACTS, HOME } from '@/router/routesConstants'
 
 
 export default function BottomNav() {
@@ -15,7 +15,7 @@ export default function BottomNav() {
   const dispatch = useDispatch()
 
   const navItems = [
-    { text: 'About Us', icon: <GroupsIcon />, href: ABOUT_US },
+    { text: 'Menu', icon: <GroupsIcon />, href: MENU },
     { text: 'Home', icon: <HomeIcon />, href: HOME },
     { text: 'Contacts', icon: <ContactsRoundedIcon />, href: CONTACTS }
   ]
