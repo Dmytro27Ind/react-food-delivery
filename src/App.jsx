@@ -8,6 +8,7 @@ import ApplicationBar from './modules/ApplicationBar';
 import BottomNav from './modules/BottomNav';
 import AppRouter from './router/AppRouter';
 import appStyles from './App.styles';
+import AppDial from './shared/components/AppDial';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <AppRouter />
       </Container>
       <BottomNav />
+      <AppDial />
     </ThemeProvider>
   )
 }

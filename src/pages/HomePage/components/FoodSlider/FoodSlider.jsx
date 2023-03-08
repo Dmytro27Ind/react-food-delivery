@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import items from './foodItems'
+import items from '@/shared/foodItems'
 import Image from '@/shared/UI/Image';
 import { Typography, Box } from '@mui/material';
 import styles from './FoodSlider.styles';
@@ -51,7 +51,7 @@ function MyFoodSlider() {
     slidesToShow: slides,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     swipeToSlide: true,
     arrows: false,

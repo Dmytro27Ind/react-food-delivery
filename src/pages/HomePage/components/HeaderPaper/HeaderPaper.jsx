@@ -6,6 +6,7 @@ import Image from '@/shared/UI/Image';
 import headerPaper from './HeaderPaper.styles';
 import AppRating from './components/AppRating';
 import Socials from '@/shared/components/Socials';
+import { MENU } from '@/router/routesConstants'
 
 export default function HeaderPaper() {
   return (
@@ -25,7 +26,7 @@ export default function HeaderPaper() {
       <Box sx={headerPaper.controlsWrapper}>
         <Box sx={headerPaper.controlsBox}>
           <AppRating />
-          <Button variant="contained" sx={headerPaper.orderButton}>Order</Button>
+          <Button href={MENU} variant="contained" sx={headerPaper.orderButton}>Order</Button>
         </Box>
         <Socials sx={headerPaper.social} color="inherit"/>
       </Box>

@@ -5,7 +5,10 @@ import FastfoodOutlinedIcon from '@mui/icons-material/FastfoodOutlined';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
 
 const styles = {
-  paper: {p: 2, mt: 10, mb: 10},
+  paper: {p: 2,
+    mt: {xs: 5, sm: 10},
+    mb: {xs: 5, sm: 10}
+  },
   title: {textAlign: 'center', pt: 4},
   itemsContainer: {
     display: 'flex',
