@@ -2,7 +2,7 @@
 This is a website prototype for selling and delivering fast food.
 
 ## Link to Demo
-[https://dmytro27ind.github.io/react-food-delivery/]
+https://dmytro27ind.github.io/react-food-delivery/
 
 ## Screenshots
 ### Dark theme

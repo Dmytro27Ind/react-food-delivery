@@ -5,23 +5,28 @@ import FastfoodOutlinedIcon from '@mui/icons-material/FastfoodOutlined';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
 
 const styles = {
-  paper: {p: 2,
+  wrapper: {
+    width: {xs: '100%', md: '125%'},
+    alignSelf: 'center',
+    p: 2,
     mt: {xs: 5, sm: 10},
     mb: {xs: 5, sm: 10}
   },
-  title: {textAlign: 'center', pt: 4},
+  title: {textAlign: 'center', pt: 4, pb: 4},
   itemsContainer: {
     display: 'flex',
     flexDirection: {xs: 'column', md: 'row'},
-    alignItems: 'center',
+    alignItems: 'flex-start',
     gap: 6,
-    p: 5
+    p: {xs: 0, sm: 3, md: 5}
   },
+  itemPaper: { width: '100%' },
   itemBox: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    width: {xs: '90%', sm: '60%', md: '33.3%'}
+    m: {xs: 2, sm: 3, md: 4},
+    gap: {md: 2}
   },
   itemTitle: {textAlign: 'center', mb: 2},
   itemSubtitle: {textAlign: 'center'},
@@ -31,7 +36,7 @@ const styles = {
     m: 2
   },
   buttonBox: {display: 'flex', justifyContent: 'center'},
-  button: {mb: 4}
+  button: {mb: 4, mt: 4, p: 2}
 }
 
 
@@ -54,11 +59,11 @@ export default function HowOrderSection() {
     },
   ]
   return (
-    <Box>
-      <Paper sx={styles.paper}>
-        <Typography variant='h4' sx={styles.title}>How to order easily in 3 steps?</Typography>
-        <Box sx={styles.itemsContainer}>
-          {items.map((item, ind) =>
+    <Box sx={styles.wrapper}>
+      <Typography variant='h4' sx={styles.title}>How to order easily in 3 steps?</Typography>
+      <Box sx={styles.itemsContainer}>
+        {items.map((item, ind) =>
+          <Paper elevation={4} sx={styles.itemPaper}>
             <Box sx={styles.itemBox} key={ind}>
               {item.icon}
               <Typography variant='h5' gutterBottom sx={styles.itemTitle}>
@@ -68,12 +73,12 @@ export default function HowOrderSection() {
                 {item.subtitle}
               </Typography>
             </Box>
-          )}
-        </Box>
-        <Box sx={styles.buttonBox}>
-          <Button variant='contained' sx={styles.button}>Register Now</Button>
-        </Box>
-      </Paper>
+          </Paper>
+        )}
+      </Box>
+      <Box sx={styles.buttonBox}>
+        <Button variant='contained' sx={styles.button}>Register Now</Button>
+      </Box>
     </Box>
   )
 }
