@@ -20,7 +20,7 @@ const styles = {
     gap: 6,
     p: {xs: 0, sm: 3, md: 5}
   },
-  itemPaper: { width: '100%' },
+  itemPaper: { width: '100%', borderRadius: 6 },
   itemBox: {
     display: 'flex',
     flexDirection: 'column',
@@ -63,8 +63,8 @@ export default function HowOrderSection() {
       <Typography variant='h4' sx={styles.title}>How to order easily in 3 steps?</Typography>
       <Box sx={styles.itemsContainer}>
         {items.map((item, ind) =>
-          <Paper elevation={4} sx={styles.itemPaper}>
-            <Box sx={styles.itemBox} key={ind}>
+          <Paper key={ind} elevation={4} sx={styles.itemPaper}>
+            <Box sx={styles.itemBox}>
               {item.icon}
               <Typography variant='h5' gutterBottom sx={styles.itemTitle}>
                 {item.title}

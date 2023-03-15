@@ -5,6 +5,7 @@ const styles = {
         alignItems: 'center',
         flexDirection: 'column',
         height: {xs: 150, md: 170, xl: 250},
+        p: {xl: 3},
         justifyContent: 'center',
         '&:hover': {
             transform: 'scale(1.1)',
